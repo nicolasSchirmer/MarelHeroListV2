@@ -8,7 +8,10 @@ Android app that uses Marvel API, MVP and modular architecture.
 ![Architecture graph](archtecture_graph.jpg)
 
 
-##### [NetworkChecker](https://github.com/nicolasSchirmer/MarvelHeroListV2/tree/master/MarvelList/network-check)
+Please check the `.gradle` files to better undertand this graph.
+
+
+#### [NetworkChecker](https://github.com/nicolasSchirmer/MarvelHeroListV2/tree/master/MarvelList/network-check)
 It's a library, 100% context free, that checks reliably if the device really has an internet connection.
 
 
