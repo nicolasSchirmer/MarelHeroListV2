@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="hero_photo_size">300dp</dimen>
+    <dimen name="hero_name_size">28sp</dimen>
+    <dimen name="hero_title_padding">24dp</dimen>
+    <dimen name="hero_name_margin">24dp</dimen>
+    <dimen name="comic_margin">8dp</dimen>
+    <dimen name="comic_height">40dp</dimen>
+</resources>

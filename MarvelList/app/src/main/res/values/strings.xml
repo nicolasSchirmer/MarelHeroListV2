@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Default app name -->
+<!DOCTYPE resources [<!ENTITY app_name "Marvel List">]>
+
+<resources>
+    <string name="app_name_release">&app_name;</string>
+    <string name="app_name_prod">&app_name; -prod-</string>
+    <string name="title_heroe_list">Heroe List</string>
+    <string name="title_hero_detail">Hero Detail</string>
+    <string name="title_activity_hero_detail_activityy">HeroDetailActivityy</string>
+</resources>

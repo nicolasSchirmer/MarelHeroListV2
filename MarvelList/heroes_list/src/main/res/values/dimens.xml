@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hero_title_size">42sp</dimen>
+    <dimen name="hero_title_margin">32dp</dimen>
+    <dimen name="hero_title_padding">24dp</dimen>
+</resources>

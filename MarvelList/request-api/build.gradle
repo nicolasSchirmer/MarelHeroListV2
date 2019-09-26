@@ -1,0 +1,26 @@
+apply from: '../build_commons_library.gradle'
+
+android {
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+    }
+
+    // These flavors are in  serviceUrl dimension
+    productFlavors {
+        prod {
+            buildConfigField "String", "BASE_API_URL", "\"http://gateway.marvel.com/v1/public/\""
+            buildConfigField "String", "PUBLIC_KEY_API", "\"c3de0f9faea2e6372daf0049a28e25aa\""
+            buildConfigField "String", "PRIVATE_KEY_API", "\"c42310231164d7fd56c436aa19f5a077c9779955\""
+        }
+    }
+
+}
+
+dependencies {
+    implementation project(library_NetworkChecker)
+
+    implementation retrofit
+    implementation retrofitGson
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HeroDetailPhoto">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="HeroDetailPhotoMask">
+        <item name="android:background">@drawable/hero_photo_maskover</item>
+        <item name="android:scaleX">-1</item> <!-- invert view -->
+    </style>
+
+    <style name="HeroDetailTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:text">@string/placeholder_hero_name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/hero_name_size</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginEnd">@dimen/hero_name_margin</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:padding">@dimen/hero_title_padding</item>
+    </style>
+
+    <style name="ComicTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:text">@string/placeholder_comic_title</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:padding">@dimen/comic_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ComicPhoto">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_margin">@dimen/comic_margin</item>
+    </style>
+
+</resources>

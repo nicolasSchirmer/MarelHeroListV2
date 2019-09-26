@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeroTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:text">@string/placeholder_hero_name</item>
+        <item name="android:textSize">@dimen/hero_title_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginStart">@dimen/hero_title_margin</item>
+        <item name="android:padding">@dimen/hero_title_padding</item>
+    </style>
+
+    <style name="HeroPhotoMask">
+        <item name="android:background">@drawable/hero_photo_maskover</item>
+    </style>
+
+    <style name="HeroPhoto">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+</resources>

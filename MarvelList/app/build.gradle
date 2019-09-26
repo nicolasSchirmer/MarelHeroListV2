@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply from: '../build_commons.gradle'
+apply plugin: 'kotlin-kapt'
+
+android {
+
+    defaultConfig {
+        applicationId "com.nschirmer.marvellist"
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "123456"
+            keyAlias "keyAlias"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            resValue "string", "app_name", "@string/app_name_release"
+//            signingConfig signingConfigs.release    // disabled for test
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kapt {
+        javacOptions {
+            // Increase the max count of errors from annotation processors
+            option("-Xmaxerrs", 500) // Default is 100
+        }
+    }
+
+    flavorDimensions serviceUrl
+    productFlavors {
+        prod {
+            resValue "string", "app_name", "@string/app_name_prod"
+            applicationIdSuffix ".prod"
+            versionNameSuffix "-prod"
+        }
+    }
+
+
+    // internal modules  (internal_modules.gradle)
+    dynamicFeatures = [module_HeroesList, module_HeroDetail]
+
+}
+
+dependencies {
+    api project(library_CoreUi)
+    api project(library_WebService)
+
+    api googlePlayCore
+    api kotlinStdLib
+    api androidxAppCompat
+    api amdroidxKtxCore
+    api androidxConstraint
+    api androidxMaterial
+
+    api fresco
+}

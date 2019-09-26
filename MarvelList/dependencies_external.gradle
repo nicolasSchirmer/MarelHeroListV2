@@ -1,0 +1,12 @@
+ext {
+    // ====== VERSIONS ======
+    retrofitVersion = '2.6.0'
+    gsonVersion = '2.8.5'
+    frescoVersion = '2.0.0'
+
+    // ====== PATHS ======
+    retrofitGson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    gson = "com.google.code.gson:gson:$gsonVersion"
+    fresco = "com.facebook.fresco:fresco:$frescoVersion"
+}

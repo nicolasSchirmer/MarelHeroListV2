@@ -1,0 +1,5 @@
+apply from: 'dependencies_internal.gradle'
+apply from: 'dependencies_external.gradle'
+apply from: 'internal_flavors.gradle'
+apply from: 'internal_modules.gradle'
+apply from: 'internal_libraries.gradle'

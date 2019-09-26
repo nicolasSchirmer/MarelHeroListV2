@@ -1,0 +1,17 @@
+apply from: '../build_commons_library.gradle'
+
+android {
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+    }
+
+}
+
+dependencies {
+    api project(library_ResponseObjects)
+    api project(library_RequestApi)
+
+    implementation retrofit
+}

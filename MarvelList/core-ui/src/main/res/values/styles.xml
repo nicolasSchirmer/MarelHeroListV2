@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- COMMONS THEMES -->
+    <style name="NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FullScreen" parent="NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TransparentStatusBar" parent="NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+    <!-- Common description text style -->
+    <style name="DescriptionText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/description_text_size</item>
+    </style>
+
+    <style name="HeaderText" parent="DescriptionText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

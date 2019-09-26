@@ -1,0 +1,16 @@
+apply from: 'internal_modules.gradle'
+apply from: 'internal_libraries.gradle'
+
+// modules
+include module_Base,
+        module_HeroesList,
+        module_HeroDetail
+
+// libraries
+include library_CoreUi,
+        library_NetworkChecker,
+        library_WebService,
+        library_RequestApi,
+        library_ResponseObjects
+
+rootProject.name='MarvelList'

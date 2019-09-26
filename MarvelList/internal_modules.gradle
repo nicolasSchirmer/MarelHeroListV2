@@ -1,0 +1,5 @@
+ext {
+    module_Base = ":app"
+    module_HeroesList = ":heroes_list"
+    module_HeroDetail = ":hero_detail"
+}

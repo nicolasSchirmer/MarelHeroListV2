@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/hero_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:placeholderImage="@android:color/black"
+        style="@style/HeroPhoto"/>
+
+    <View
+        android:id="@+id/hero_photo_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/HeroPhotoMask"/>
+
+    <TextView
+        android:id="@+id/hero_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/HeroTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/hero_photo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

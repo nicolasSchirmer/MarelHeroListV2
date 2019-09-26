@@ -1,0 +1,7 @@
+ext {
+    library_CoreUi = ":core-ui"
+    library_NetworkChecker = ":network-check"
+    library_RequestApi = ":request-api"
+    library_WebService = ":webservice"
+    library_ResponseObjects = ":response-objects"
+}

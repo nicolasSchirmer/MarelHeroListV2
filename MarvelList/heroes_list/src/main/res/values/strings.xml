@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="placeholder_hero_name">Some hero</string>
+    <string name="greeting_title">Hi!</string>
+    <string name="greetings_content">Swipe left/right to see all characters and tap it to see more details</string>
+    <string name="greetings_confirm">OK</string>
+</resources>
